@@ -40,6 +40,7 @@ public class CustomerDaoImpl implements ICustomerDao{
 	public Customer addCustomer(Customer customer) {
 		// TODO Auto-generated method stub
 		Session scs = this.sfactory.getCurrentSession();
+		System.out.println("added successfully");
 		scs.save(customer);
 		return customer;
 	}
